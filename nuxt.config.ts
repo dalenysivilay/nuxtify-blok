@@ -1,5 +1,9 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  runtimeConfig: {
+    SHOPIFY_STOREFRONT_ENDPOINT: process.env.SHOPIFY_STOREFRONT_ENDPOINT,
+    SHOPIFY_STOREFRONT_ACCESS_TOKEN: process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN,
+  },
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module'],
   typescript: {
     strict: true,
   },
