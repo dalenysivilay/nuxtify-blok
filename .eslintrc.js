@@ -29,5 +29,11 @@ module.exports = {
         usePrettierrc: true,
       },
     ],
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['index'],
+      },
+    ],
   },
 };

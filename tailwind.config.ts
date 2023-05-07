@@ -1,7 +1,10 @@
 export default {
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        sans: ['Roboto Slab', 'sans'],
+        serif: ['Roboto', 'sans-serif'],
+      },
       colors: {},
     },
   },

@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/apollo',
+    '@nuxtjs/google-fonts',
     'nuxt-icon',
   ],
   devtools: {
@@ -39,6 +40,12 @@ export default defineNuxtConfig({
   },
   eslint: {
     lintOnStart: false,
+  },
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Robot+Slab': true,
+    },
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',

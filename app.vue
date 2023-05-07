@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="text-green-700">My Nuxt App</h1>
-    <NuxtWelcome />
+    <main class="container mx-auto">
+      <NuxtPage />
+    </main>
   </div>
 </template>

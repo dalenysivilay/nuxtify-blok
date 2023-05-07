@@ -43,6 +43,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
     "@pinia/nuxt": "^0.4.9",
     "pinia": "^2.0.35"
   }
