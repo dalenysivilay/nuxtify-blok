@@ -3,12 +3,24 @@ export default defineNuxtConfig({
     SHOPIFY_STOREFRONT_ENDPOINT: process.env.SHOPIFY_STOREFRONT_ENDPOINT,
     SHOPIFY_STOREFRONT_ACCESS_TOKEN: process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN,
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module', '@nuxt/devtools'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module',
+    '@nuxt/devtools',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+  ],
   devtools: {
     enabled: process.env.NODE_ENV === 'development',
   },
   typescript: {
     strict: true,
+  },
+  pinia: {
+    autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
+  },
+  eslint: {
+    lintOnStart: false,
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
