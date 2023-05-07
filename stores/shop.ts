@@ -1,11 +1,11 @@
 import { defineStore } from 'pinia';
+import type { ShopState } from '~/types/stores';
 
 export const useShopStore = defineStore({
   id: 'shop',
   state: (): ShopState => {
     return {
-      description:
-        'Effective Turf and Agriculture Products with Simple, Convenient, 24/7 Online Ordering.',
+      description: '',
       loading: false,
       localization: {
         country: {

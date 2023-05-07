@@ -1,27 +1,3 @@
 {
-  "compilerOptions": {
-    "types": ["@nuxt/types", "@types/node"],
-    "module": "esnext",
-    "target": "esnext",
-    "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "jsx": "preserve",
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noImplicitAny": false,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    },
-    "incremental": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
-  },
-  "extends": "./.nuxt/tsconfig.json",
-  "include": ["nuxt.config.ts", "types", "src"]
+  "extends": "./.nuxt/tsconfig.json"
 }

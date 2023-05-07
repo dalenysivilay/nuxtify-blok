@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import type { CartState } from '~/types/stores';
 
 export const useCartStore = defineStore({
   id: 'cart',

@@ -1,4 +1,4 @@
-interface CartState {
+export interface CartState {
   cart: {
     checkoutUrl: string | null;
     estimatedCost: {
@@ -28,14 +28,14 @@ interface CartState {
   cartOpen: boolean;
 }
 
-interface CustomerState {
+export interface CustomerState {
   isLoggedIn: boolean;
   accessToken: string | null;
   customer: Customer | null;
   loading: boolean;
 }
 
-interface Customer {
+export interface Customer {
   id: string;
   email: string;
   firstName: string;
@@ -44,7 +44,7 @@ interface Customer {
   acceptsMarketing: boolean;
 }
 
-interface CreateCustomerInput {
+export interface CreateCustomerInput {
   email: string;
   password: string;
   firstName: string;
@@ -52,7 +52,7 @@ interface CreateCustomerInput {
   acceptsMarketing?: boolean;
 }
 
-interface UpdateCustomerInput {
+export interface UpdateCustomerInput {
   email: string;
   firstName: string;
   lastName: string;
@@ -60,17 +60,17 @@ interface UpdateCustomerInput {
   acceptsMarketing?: boolean;
 }
 
-interface SignInInput {
+export interface SignInInput {
   email: string;
   password: string;
 }
 
-interface ProductState {
+export interface ProductState {
   selectedVariantId: string | undefined;
   recentlyViewed: string[];
 }
 
-interface ShopState {
+export interface ShopState {
   description: string;
   loading: boolean;
   localization: {

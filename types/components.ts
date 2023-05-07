@@ -1,14 +1,14 @@
-interface Price {
+export interface Price {
   amount: number;
   currencyCode: string;
 }
 
-interface PriceRange {
+export interface PriceRange {
   minVariantPrice: Price;
   maxVariantPrice: Price;
 }
 
-interface ProductCard {
+export interface ProductCard {
   availableForSale?: boolean;
   compareAtPriceRange?: PriceRange;
   description?: string;
@@ -21,24 +21,24 @@ interface ProductCard {
   variants: object;
 }
 
-interface VariantObject {
+export interface VariantObject {
   availableForSale: boolean;
   id: string;
   quantityAvailable: number;
   sku: string;
   title: string;
 }
-interface Variant {
+export interface Variant {
   node: VariantObject;
 }
 
-interface Option {
+export interface Option {
   id: string;
   name: string;
   values: string[];
 }
 
-interface Amount {
+export interface Amount {
   amount: string;
   currencyCode: string;
 }
