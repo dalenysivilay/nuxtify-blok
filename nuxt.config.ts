@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/apollo',
+    'nuxt-icon',
   ],
   devtools: {
     enabled: process.env.NODE_ENV === 'development',
