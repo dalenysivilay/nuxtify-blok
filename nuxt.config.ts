@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     tokenStorage: 'cookie',
     clients: {
       default: {
-        httpEndpoint: `${process.env.SHOPIFY_STOREFRONT_ENDPOINT}`,
+        httpEndpoint: process.env.SHOPIFY_STOREFRONT_ENDPOINT ?? '',
         httpLinkOptions: {
           headers: {
             'X-Shopify-Storefront-Access-Token':
