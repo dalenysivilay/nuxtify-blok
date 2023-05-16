@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
   runtimeConfig: {
-    SHOPIFY_STOREFRONT_ACCESS_TOKEN: process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN,
+    SHOPIFY_STOREFRONT_TOKEN: process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN,
     SHOPIFY_STOREFRONT_ENDPOINT: process.env.SHOPIFY_STOREFRONT_ENDPOINT,
+    STORYBLOK_TOKEN: process.env.STORYBLOK_TOKEN,
   },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
         httpLinkOptions: {
           headers: {
             'X-Shopify-Storefront-Access-Token':
-              process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN ?? '',
+              process.env.SHOPIFY_STOREFRONT_TOKEN ?? '',
           },
         },
       },
