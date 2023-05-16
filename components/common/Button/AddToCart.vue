@@ -1,5 +1,10 @@
 <template>
-  <button type="button" aria-label="Add To Cart Button" @click="addToCart">
+  <button
+    type="button"
+    aria-label="Add To Cart Button"
+    @keyup.enter="addToCart"
+    @click="addToCart"
+  >
     Add to Cart
   </button>
 </template>
