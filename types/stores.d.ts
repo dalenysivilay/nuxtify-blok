@@ -35,36 +35,6 @@ export interface CustomerState {
   loading: boolean;
 }
 
-export interface Customer {
-  id: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  phone: string;
-  acceptsMarketing: boolean;
-}
-
-export interface CreateCustomerInput {
-  email: string;
-  password: string;
-  firstName: string;
-  lastName: string;
-  acceptsMarketing?: boolean;
-}
-
-export interface UpdateCustomerInput {
-  email: string;
-  firstName: string;
-  lastName: string;
-  phone: string;
-  acceptsMarketing?: boolean;
-}
-
-export interface SignInInput {
-  email: string;
-  password: string;
-}
-
 export interface ProductState {
   selectedVariantId: string | undefined;
   recentlyViewed: string[];
