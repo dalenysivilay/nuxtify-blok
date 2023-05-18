@@ -32,7 +32,7 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['Header', 'Footer'],
+        ignores: ['index', 'Header', 'Footer'],
       },
     ],
   },
