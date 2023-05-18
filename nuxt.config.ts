@@ -36,25 +36,8 @@ export default defineNuxtConfig({
       },
     },
   },
-  pinia: {
-    autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
-  },
   eslint: {
     lintOnStart: false,
-  },
-  googleFonts: {
-    families: {
-      Roboto: true,
-      'Robot+Slab': true,
-    },
-  },
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config',
-    exposeConfig: false,
-    exposeLevel: 2,
-    injectPosition: 'first',
-    viewer: true,
   },
   postcss: {
     plugins: {
